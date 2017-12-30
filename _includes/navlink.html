@@ -1,0 +1,10 @@
+
+{% if include.show %}
+    <li class="item">
+        {% if page.title != include.title %}
+            <a class="link" href="{{ site.url }}/{{ include.url }}">{{ include.title }}</a>
+        {% else %}
+            <b><a class="link" href="{{ site.url }}/{{ include.url }}">{{ include.title }}</a></b>
+        {% endif %}
+    </li>
+{% endif %}
