@@ -69,8 +69,7 @@ width: normal
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
-
-# if you don't need "about" or "blog", comment them out below
+talks: true
 about: true
 blog: true
 
