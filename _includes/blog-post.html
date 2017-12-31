@@ -1,6 +1,14 @@
 <div class="item {% if post.star %}star{% endif %}">
-    <a class="url" href="{{ site.url }}{{ post.url }}">
+    {% if post.externalLink %}
+        {% assign postUrl = post.externalLink %}
+    {% else %}
+        {% assign postUrl = site.url | append:post.url %}
+    {% endif %}
+    <a class="url" href="{{ postUrl }}">
         <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
         <h3 class="title">{{ post.title }}</h3>
+        {% if post.externalLink %}
+            [External post on {{ post.externalLinkSource }}]
+        {% endif %}
     </a>
 </div>
