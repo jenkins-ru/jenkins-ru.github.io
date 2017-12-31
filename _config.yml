@@ -69,8 +69,9 @@ width: large
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
-talks: true
-about: true
+# TODO: Not ready
+talks: false
+about: false
 blog: true
 
 # do you want to show the "read time" of the posts?
