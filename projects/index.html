@@ -13,17 +13,19 @@ title: Projects
                 {% endif %}
                 <tr>
                     <td>
-                        <div class="item {% if post.star %}star{% endif %}">
+                        <div class="item {% if post.star %}star{% endif %}"  align="top">
                             <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
                                 <h3 class="title">{{ post.title }}</h3>
                             </a>
                             {{ post.summary }}
                         </div>
                     </td>
-                    <td width="200px">
-                        <a class="link" href="{{ projectUrl }}">
-                            <img src="{{ post.logo }}" alt="{{ post.title }} logo" height="128px"/>
-                        </a>
+                    <td width="64px">
+                        {% if post.logo %}
+                            <a class="link" href="{{ projectUrl }}">
+                                <img src="{{ post.logo }}" alt="{{ post.title }} logo"/>
+                            </a>
+                        {% endif %}
                     </td>
                 </tr>
             {% endif %}
