@@ -3,14 +3,30 @@ layout: page
 title: Projects
 ---
 <section class="list">
-    {% for post in site.posts %}
-        {% if post.category == "projects" %}
-            <div class="item {% if post.star %}star{% endif %}">
-                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <aside></aside>
-                    <h3 class="title">{{ post.title }}</h3>
-                </a>
-            </div>
-        {% endif %}
-    {% endfor %}
+    <table>
+        {% for post in site.posts %}
+            {% if post.category == "projects" %}
+                {% if post.externalLink %}
+                    {% assign projectUrl = post.externalLink %}
+                {% else %}
+                    {% assign projectUrl = site.url | append:post.url %}
+                {% endif %}
+                <tr>
+                    <td>
+                        <div class="item {% if post.star %}star{% endif %}">
+                            <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+                                <h3 class="title">{{ post.title }}</h3>
+                            </a>
+                            {{ post.summary }}
+                        </div>
+                    </td>
+                    <td width="200px">
+                        <a class="link" href="{{ projectUrl }}">
+                            <img src="{{ post.logo }}" alt="{{ post.title }} logo" height="128px"/>
+                        </a>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
 </section>
