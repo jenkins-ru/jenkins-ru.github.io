@@ -8,5 +8,5 @@ externalLinkSource: jenkins.io
 author: oleg_nenashev
 tags:
 - jenkins
-- remoting
+- gsoc
 ---

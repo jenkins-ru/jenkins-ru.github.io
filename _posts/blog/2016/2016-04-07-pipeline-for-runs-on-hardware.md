@@ -8,5 +8,6 @@ externalLinkSource: jenkins.io
 author: oleg_nenashev
 tags:
 - jenkins
-- remoting
+- pipeline
+- hardware
 ---
