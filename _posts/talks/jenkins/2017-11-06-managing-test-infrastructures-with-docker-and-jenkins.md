@@ -3,7 +3,10 @@ title: "Managing Embedded Systems test infrastructures with Docker and Jenkins"
 layout: talk
 category: talks
 headerImage: false
-date: 2017-11-06    
+date: 2017-11-06
+lastPresented:
+    title: Embedded Conference Scandinavia 2017
+    url: http://www.embeddedconference.se/app/attendee/default.asp?PageId=57726&MenuItemId=54357&parent=54348&ProjectId=9774
 tag:
 - jenkins
 - docker

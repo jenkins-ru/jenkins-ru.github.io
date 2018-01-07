@@ -3,7 +3,10 @@ title: "ORCONF 2017. State of LibreCores CI"
 layout: talk
 category: talks
 headerImage: false
-date: 2017-09-09    
+date: 2017-09-09
+lastPresented:
+    title: ORCONF 2017
+    url: https://orconf.org/2017/
 tag:
 - librecores
 author: oleg_nenashev

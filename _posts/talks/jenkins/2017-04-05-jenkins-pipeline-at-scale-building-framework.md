@@ -4,6 +4,9 @@ layout: talk
 category: talks
 headerImage: false
 date: 2017-04-05    
+lastPresented:
+    title: CloudBees | Jenkins Automotive and Embedded Day 2017
+    url: https://www.cloudbees.com/event/cloudbees-jenkins-automotive-and-embedded-day
 tag:
 - jenkins
 - pipeline

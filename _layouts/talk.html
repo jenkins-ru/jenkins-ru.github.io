@@ -9,6 +9,14 @@ layout: page
 <span class="date">
     Last presented:
     <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% if page.lastPresented and page.lastPresented.title %}
+        at
+        {% if page.lastPresented.url %}
+            <a class="item" href="{{ page.lastPresented.url }}">{{ page.lastPresented.title }}</a>
+        {% else %}
+            {{ page.lastPresented.title }}
+        {% endif %}
+    {% endif %}
 </span>
 
 {% if site.show-tags %}
