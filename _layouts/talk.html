@@ -29,14 +29,15 @@ layout: page
 
 {{content}}
 
-Slides:
 
+{% if page.slideSource %}
+<h4>Slides</h4>
 <div>
     {% if page.slideSource == 'speakerdeck' %}
         <script async class="speakerdeck-embed" data-id="{{ page.speakerdeckId }}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
     {% endif %}
     {% if page.slideSource == 'slideshare' %}
-        <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{ page.slideshareId }}" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{ page.slideshareId }}" width="{{ site.widthPx }}" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
         </iframe>
         <div style="margin-bottom:5px">
             <strong>
@@ -48,6 +49,7 @@ Slides:
         <a class="item" href="{{ page.slidesUrl }}">External source</a>
     {% endif %}
 </div>
+{% endif %}
 
 {% if site.post-advance-links contains page.category %}
     <div class="blog-navigation">

@@ -63,7 +63,9 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
+# TODO: merge into a single option
 width: large
+widthPx: 810px
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
