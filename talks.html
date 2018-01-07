@@ -2,15 +2,20 @@
 layout: page
 title: Talks
 ---
+
+Here you can find some of my recent talks.
+This section is in progress, you can find more talks at <a href="https://speakerdeck.com/{{ site.speakerdeck }}/">my Speaker Deck</a>.
+
 <section class="list">
     {% for post in site.posts %}
-        {% if post.talks %}
+        {% if site.talks %}
+            {% if post.category == 'talks' %}
             <div class="item {% if post.star %}star{% endif %}">
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
                     <h3 class="title">{{ post.title }}</h3>
                 </a>
             </div>
+            {% endif %}
         {% endif %}
     {% endfor %}
 </section>

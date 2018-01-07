@@ -49,6 +49,8 @@ github: oleg-nenashev
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: o.v.nenashev@gmail.com
+speakerdeck: onenashev
+slideshare: OlegNenashev
 
 authors:
     oleg_nenashev:
@@ -70,7 +72,7 @@ width: large
 # if you don't need projects, comment the *projects* configs below
 projects: true
 # TODO: Not ready
-talks: false
+talks: true
 about: false
 blog: true
 

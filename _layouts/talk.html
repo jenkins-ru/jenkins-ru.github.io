@@ -1,0 +1,67 @@
+---
+layout: page
+---
+
+{% if page.image and page.headerImage %}
+    <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
+{% endif %}
+
+<span class="date">
+    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
+    {% if site.read-time %} - {% include read-time.html %}{% endif %}
+</span>
+
+{% if site.show-tags %}
+    <div class="post-tags">
+        {% for tag in page.tags %}
+            <a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{{content}}
+
+Slides:
+
+<div>
+    {% if page.slideSource == 'speakerdeck' %}
+        <script async class="speakerdeck-embed" data-id="{{ page.speakerdeckId }}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+    {% endif %}
+    {% if page.slideSource == 'slideshare' %}
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{ page.slideshareId }}" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+        </iframe>
+        <div style="margin-bottom:5px">
+            <strong>
+                <a href="//www.slideshare.net/{{ site.speakerdeck }}/{{ page.slideshareName }}"
+                   title="{{ page.title }}" target="_blank">{{ page.title }}</a>
+            </strong> from <strong><a href="https://www.slideshare.net/{{ site.slideshare }}" target="_blank"> {{ site.name }} </a></strong> </div>
+    {% endif %}
+    {% if page.slideSource == 'external' %}
+        <a class="item" href="{{ page.slidesUrl }}">External source</a>
+    {% endif %}
+</div>
+
+{% if site.post-advance-links contains page.category %}
+    <div class="blog-navigation">
+        {% if page.previous.url %}
+            <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+        {% else %}
+            <a class="prev"></a>
+        {% endif %}
+        {% if page.next.url %}
+            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+        {% endif %}
+    </div>
+{% endif %}
+
+{% if site.related %}
+    {% include related.html %}
+{% endif %}
+
+{% if site.show-author %}
+    {% include author.html %}
+{% endif %}
+
+{% if site.disqus.categories contains page.category %}
+    {% include disqus.html %}
+{% endif %}
