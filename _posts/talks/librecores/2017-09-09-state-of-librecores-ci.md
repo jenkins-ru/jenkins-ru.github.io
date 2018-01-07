@@ -12,6 +12,9 @@ tag:
 author: oleg_nenashev
 slideSource: speakerdeck
 speakerdeckId: e1df677be54245e4ad610fed240e9c2d
+video:
+    source: youtube
+    youtubeId: FX7_6d5yAg4
 ---
 
 At ORCONF 2016 we announced the work on LibreCores CI - a continuous integration service for open-source Hardware projects. 

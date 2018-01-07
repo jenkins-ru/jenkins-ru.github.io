@@ -51,6 +51,13 @@ layout: page
 </div>
 {% endif %}
 
+{% if page.video %}
+<h4>Video</h4>
+    {% if page.video.source == 'youtube' %}
+        <iframe width="{{ site.widthPx }}" height="580" src="https://www.youtube.com/embed/{{ page.video.youtubeId }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    {% endif %}
+{% endif %}
+
 {% if site.post-advance-links contains page.category %}
     <div class="blog-navigation">
         {% if page.previous.url %}
