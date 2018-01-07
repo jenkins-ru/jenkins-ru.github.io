@@ -21,10 +21,12 @@ layout: page
 </div>
 {% endif %}
 
+{% include links.html %}
+
 {% if site.related %}
-{% include related.html %}
+    {% include related.html %}
 {% endif %}
 
 {% if site.disqus.categories contains page.category %}
-{% include disqus.html %}
+    {% include disqus.html %}
 {% endif %}
