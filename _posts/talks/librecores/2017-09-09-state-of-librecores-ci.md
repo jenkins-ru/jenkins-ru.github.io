@@ -1,5 +1,5 @@
 ---
-title: "ORCONF 2017. State of LibreCores CI"
+title: "State of LibreCores CI"
 layout: talk
 category: talks
 headerImage: false
