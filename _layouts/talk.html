@@ -7,8 +7,8 @@ layout: page
 {% endif %}
 
 <span class="date">
-    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
-    {% if site.read-time %} - {% include read-time.html %}{% endif %}
+    Last presented:
+    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%B %d, %Y" }}</time>
 </span>
 
 {% if site.show-tags %}
