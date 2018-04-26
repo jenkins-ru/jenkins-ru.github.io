@@ -16,6 +16,9 @@ links:
     url: https://github.com/oleg-nenashev/demo-jenkins-config-as-code
 -   title: Jenkins Pipeline Library
     url: https://github.com/jenkins-infra/pipeline-library/
+video:
+    source: youtube
+    youtubeId: aoXjHcHz1KA
 ---
 
 If you have ever tried developing Pipeline Libraries in Jenkins, 
