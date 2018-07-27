@@ -75,7 +75,7 @@ widthPx: 810px
 projects: true
 # TODO: Not ready
 talks: true
-about: false
+about: true
 blog: true
 
 # do you want to show the "read time" of the posts?
