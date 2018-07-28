@@ -2,10 +2,12 @@
 # blog page must be named index.html and in its own folder to support pagination
 # https://jekyllrb.com/docs/pagination/
 layout: page
-title: Blog
+title: Блог
 ---
 <section class="list">
-	{% if site.posts.size == 0 %}
+    <p><b>Work in progress...</b></p>
+
+    {% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
 	{% elsif site.paginate %}
 		{% for post in paginator.posts %}

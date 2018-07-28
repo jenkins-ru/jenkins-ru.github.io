@@ -1,14 +1,14 @@
 # main text of home
-name: Oleg Nenashev
-bio: Just another engineer
+name: Jenkins RU
+bio: О Jenkins по-русски
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: О @jenkinsci по-русски
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/jenkins/logo.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -16,7 +16,7 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://oleg-nenashev.github.io
+url: https://jenkins-ru.github.io
 
 permalink: /:title/
 
@@ -34,31 +34,31 @@ disqus:
 
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
-twitter: oleg_nenashev
+twitter: jenkins_ru
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: onenashev
-# youtube: myyoutube
+#linkedin: onenashev
+youtube: jenkinsru
 # spotify: myspotify
-github: oleg-nenashev
+#github: oleg-nenashev
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: o.v.nenashev@gmail.com
-speakerdeck: onenashev
-slideshare: OlegNenashev
+email: jenkins-ru-orgs@gmail.com
+#speakerdeck: onenashev
+#slideshare: OlegNenashev
 
 authors:
-    oleg_nenashev:
-        name: Oleg Nenashev
-        bio: Just another engineer
-        external-image: false
-        picture: assets/images/profile.jpg
-        twitter: oleg_nenashev
+  oleg_nenashev:
+    name: Oleg Nenashev
+    bio: Организатор Jenkins RU
+    external-image: false
+    picture: assets/images/authors/oleg-nenashev/profile.jpg
+    twitter: oleg_nenashev
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal

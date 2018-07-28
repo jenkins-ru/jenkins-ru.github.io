@@ -1,12 +1,12 @@
-<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+<nav class="{% if page.title == "Домой" %}nav-home{% else %}nav{% endif %}">
     <ul class="list">
-        {% if page.title != "Home" %}
-            {% include navlink.html url="" title="Home" show=true %}
+        {% if page.title != "Домой" %}
+            {% include navlink.html url="" title="Домой" show=true %}
         {% endif %}
-        {% include navlink.html url="blog" title="Blog" show=site.blog %}
-        {% include navlink.html url="projects" title="Projects" show=site.projects %}
-        {% include navlink.html url="talks" title="Talks" show=site.talks %}
-        {% include navlink.html url="about" title="About" show=site.about %}
+        {% include navlink.html url="meetups" title="Митапы" show=site.projects %}
+        {% include navlink.html url="talks" title="Доклады" show=site.talks %}
+        {% include navlink.html url="blog" title="Блог" show=site.blog %}
+        {% include navlink.html url="about" title="О сообществе" show=site.about %}
 
         {% if site.resume == true %}
             <li class="item">

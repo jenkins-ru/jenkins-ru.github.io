@@ -1,0 +1,28 @@
+---
+layout: page
+title: Митапы
+---
+<section class="list">
+    <p><b>Work in progress...</b></p>
+
+    <table>
+        {% for meetup in site.data.meetups %}
+            <tr>
+                <td>
+                    <div class="item {% if post.star %}star{% endif %}"  align="top">
+                        <a class="url" href="{% if meetup.externalLink %}{{ meetup.externalLink }}{% else %}{{ site.url }}{{ meetup.url }}{% endif %}">
+                            <h3 class="title">{{ meetup.city }}</h3>
+                        </a>
+                    </div>
+                </td>
+                <td width="64px">
+                    {% if meetup.logo %}
+                        <a class="link" href="{{ projectUrl }}">
+                            <img src="{{ meetup.logo }}" alt="{{ meetup.city }} - лого митапа"/>
+                        </a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</section>
