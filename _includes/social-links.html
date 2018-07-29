@@ -1,103 +1,122 @@
 <div class="social-links">
-    {% if site.facebook %}
-        <a class="link" data-title="facebook.com/{{ site.facebook }}" href="http://facebook.com/{{ site.facebook }}" target="_blank">
+
+    {% if include.data.meetup %}
+    <a class="link" data-title="{{ include.data.city }}" href="http://meetup.com/{{ include.data.meetup }}" target="_blank">
+        <svg class="icon icon-meetup"><use xlink:href="#icon-meetup"></use></svg>
+    </a>
+    {% endif %}
+
+    {% if include.data.facebook %}
+        <a class="link" data-title="facebook.com/{{ include.data.facebook }}" href="http://facebook.com/{{ include.data.facebook }}" target="_blank">
             <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.twitter %}
-        <a class="link" data-title="twitter.com/{{ site.twitter }}" href="http://twitter.com/{{ site.twitter }}" target="_blank">
+    {% if include.data.twitter %}
+        <a class="link" data-title="twitter.com/{{ include.data.twitter }}" href="http://twitter.com/{{ include.data.twitter }}" target="_blank">
             <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.google %}
-        <a class="link" data-title="plus.google.com/+{{ site.google }}" href="http://plus.google.com/+{{ site.google }}" target="_blank">
+    {% if include.data.google %}
+        <a class="link" data-title="plus.google.com/+{{ include.data.google }}" href="http://plus.google.com/+{{ include.data.google }}" target="_blank">
             <svg class="icon icon-google"><use xlink:href="#icon-google"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.instagram %}
-        <a class="link" data-title="instagram.com/{{ site.instagram }}" href="http://instagram.com/{{ site.instagram }}" target="_blank">
+    {% if include.data.instagram %}
+        <a class="link" data-title="instagram.com/{{ include.data.instagram }}" href="http://instagram.com/{{ include.data.instagram }}" target="_blank">
             <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.pinterest %}
-        <a class="link" data-title="pinterest.com/{{ site.pinterest }}" href="http://pinterest.com/{{ site.pinterest }}" target="_blank">
+    {% if include.data.pinterest %}
+        <a class="link" data-title="pinterest.com/{{ include.data.pinterest }}" href="http://pinterest.com/{{ include.data.pinterest }}" target="_blank">
             <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.linkedin %}
-        <a class="link" data-title="linkedin.com/in/{{ site.linkedin }}" href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank">
+    {% if include.data.linkedin %}
+        <a class="link" data-title="linkedin.com/in/{{ include.data.linkedin }}" href="http://linkedin.com/in/{{ include.data.linkedin }}" target="_blank">
             <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.youtube %}
-        <a class="link" data-title="youtube.com/{{ site.youtube }}" href="http://youtube.com/{{ site.youtube }}" target="_blank">
+    {% if include.data.youtube %}
+        <a class="link" data-title="youtube.com/{{ include.data.youtube }}" href="http://youtube.com/{{ include.data.youtube }}" target="_blank">
             <svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.spotify %}
-        <a class="link" data-title="open.spotify.com/user/{{ site.spotify }}" href="https://open.spotify.com/user/{{ site.spotify }}" target="_blank">
+    {% if include.data.spotify %}
+        <a class="link" data-title="open.spotify.com/user/{{ include.data.spotify }}" href="https://open.spotify.com/user/{{ include.data.spotify }}" target="_blank">
             <svg class="icon icon-spotify"><use xlink:href="#icon-spotify"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.lastfm %}
-        <a class="link" data-title="last.fm/user/{{ site.lastfm }}" href="https://last.fm/user/{{ site.lastfm }}" target="_blank">
+    {% if include.data.lastfm %}
+        <a class="link" data-title="last.fm/user/{{ include.data.lastfm }}" href="https://last.fm/user/{{ include.data.lastfm }}" target="_blank">
             <svg class="icon icon-lastfm"><use xlink:href="#icon-lastfm"></use></svg>   
         </a>
     {% endif %}
 
-    {% if site.github %}
-        <a class="link" data-title="github.com/{{ site.github }}" href="https://github.com/{{ site.github }}" target="_blank">
+    {% if include.data.github %}
+        <a class="link" data-title="github.com/{{ include.data.github }}" href="https://github.com/{{ include.data.github }}" target="_blank">
             <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
         </a>
     {% endif %}
     
-    {% if site.stackoverflow %}
-        <a class="link" data-title="stackoverflow.com/users/{{ site.stackoverflow }}" href="http://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank">
+    {% if include.data.stackoverflow %}
+        <a class="link" data-title="stackoverflow.com/users/{{ include.data.stackoverflow }}" href="http://stackoverflow.com/users/{{ include.data.stackoverflow }}" target="_blank">
             <svg class="icon icon-stackoverflow"><use xlink:href="#icon-stackoverflow"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.quora %}
-        <a class="link" data-title="quora.com/profile/{{ site.quora }}" href="https://www.quora.com/profile/{{ site.quora }}" target="_blank">
+    {% if include.data.quora %}
+        <a class="link" data-title="quora.com/profile/{{ include.data.quora }}" href="https://www.quora.com/profile/{{ include.data.quora }}" target="_blank">
             <svg class="icon icon-quora"><use xlink:href="#icon-quora"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.reddit %}
-        <a class="link" data-title="reddit.com/user/{{ site.reddit }}" href="https://www.reddit.com/user/{{ site.reddit }}" target="_blank">
+    {% if include.data.reddit %}
+        <a class="link" data-title="reddit.com/user/{{ include.data.reddit }}" href="https://www.reddit.com/user/{{ include.data.reddit }}" target="_blank">
             <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.medium %}
-        <a class="link" data-title="medium.com/@{{ site.medium }}" href="https://medium.com/@{{ site.medium }}" target="_blank">
+    {% if include.data.medium %}
+        <a class="link" data-title="medium.com/@{{ include.data.medium }}" href="https://medium.com/@{{ include.data.medium }}" target="_blank">
             <svg class="icon icon-medium"><use xlink:href="#icon-medium"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.vimeo %}
-        <a class="link" data-title="vimeo.com/{{ site.vimeo }}" href="https://vimeo.com/{{ site.vimeo }}" target="_blank">
+    {% if include.data.vimeo %}
+        <a class="link" data-title="vimeo.com/{{ include.data.vimeo }}" href="https://vimeo.com/{{ include.data.vimeo }}" target="_blank">
             <svg class="icon icon-vimeo"><use xlink:href="#icon-vimeo"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.lanyrd %}
-        <a class="link" data-title="lanyrd.com/{{ site.lanyrd }}" href="https://lanyrd.com/{{ site.lanyrd }}" target="_blank">
+    {% if include.data.lanyrd %}
+        <a class="link" data-title="lanyrd.com/{{ include.data.lanyrd }}" href="https://lanyrd.com/{{ include.data.lanyrd }}" target="_blank">
             <svg class="icon icon-microphone"><use xlink:href="#icon-microphone"></use></svg>
         </a>
     {% endif %}
 
-    {% if site.email %}
-        <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}">
+    {% if include.data.email %}
+        <a class="link" data-title="{{ include.data.email }}" href="mailto:{{ include.data.email }}">
             <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
         </a>
+    {% endif %}
+
+    {% if include.data.gitter %}
+    <a class="link" data-title="{{ include.data.gitter }}" href="https://gitter.im/{{ include.data.gitter }}" target="_blank">
+        <svg class="icon icon-gitter"><use xlink:href="#icon-gitter"></use></svg>
+    </a>
+    {% endif %}
+
+    {% if include.data.telegram %}
+    <a class="link" data-title="telegram/{{ include.data.telegram }}" href="https://t.me/joinchat/{{ include.data.telegram }}" target="_blank">
+        <svg class="icon icon-telegram"><use xlink:href="#icon-telegram"></use></svg>
+    </a>
     {% endif %}
 </div>

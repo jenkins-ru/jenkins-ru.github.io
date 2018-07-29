@@ -36,21 +36,11 @@ disqus:
 #facebook: myfacebook
 twitter: jenkins_ru
 # google: mygoogle
-# instagram: myinstagram
-# pinterest: mypinterest
-#linkedin: onenashev
 youtube: jenkinsru
 # spotify: myspotify
-#github: oleg-nenashev
-# lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-# vimeo: myvimeo
-# lanyrd: mylanyrd
+#github: oleg-nenashexwv
 email: jenkins-ru-orgs@gmail.com
-#speakerdeck: onenashev
-#slideshare: OlegNenashev
+gitter: jenkinsci-ru/public
 
 authors:
   oleg_nenashev:

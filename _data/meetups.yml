@@ -1,12 +1,21 @@
 - id: jenkins_spb
   city: "Санкт-Петербург"
   externalLink: "https://www.meetup.com/St-Petersburg-Jenkins-Meetup/"
+  logo: /assets/images/meetups/jenkins_spb/logo.png
+  meetup: St-Petersburg-Jenkins-Meetup
+  twitter: jenkins_spb
+  telegram: HbH7fhI8FI4zCSDpxD09VA
 - id: jenkins_msk
   city: "Москва"
   externalLink: "https://www.meetup.com/Moscow-Jenkins-Meetup"
+  meetup: Moscow-Jenkins-Meetup
 - id: jenkins_yaroslavl
   city: "Ярославль"
   externalLink: "https://www.meetup.com/Yaroslavl-Jenkins-Meetup/"
+  logo: /assets/images/meetups/jenkins_yaroslavl/logo.png
+  meetup: Yaroslavl-Jenkins-Meetup
 - id: jenkins_by
   city: "Беларусь"
   externalLink: "https://www.meetup.com/Belarus-Jenkins-Meetup"
+  logo: /assets/images/meetups/jenkins_by/logo.png
+  meetup: Belarus-Jenkins-Meetup
