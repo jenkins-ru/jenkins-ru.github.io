@@ -16,7 +16,7 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://jenkins-ru.github.io
+url: https://jenkinsci-ru.github.io
 
 permalink: /:title/
 
