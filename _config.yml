@@ -44,11 +44,15 @@ gitter: jenkinsci-ru/public
 
 authors:
   oleg_nenashev:
-    name: Oleg Nenashev
-    bio: Организатор Jenkins RU
+    name: Олег Ненашев
+    bio: Организатор Jenkins RU, мейнтейнер ядра Jenkins
     external-image: false
     picture: assets/images/authors/oleg-nenashev/profile.jpg
     twitter: oleg_nenashev
+  arseniy_tashoyan:
+    name: Арсений Ташоян
+    bio: Hewlett Packard Enterprise
+    external-image: false
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal

@@ -7,7 +7,7 @@ layout: page
 {% endif %}
 
 <span class="date">
-    Last presented:
+    Представлен на:
     <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {% if page.lastPresented and page.lastPresented.title %}
         at
@@ -31,31 +31,30 @@ layout: page
 
 {% include links.html %}
 
-{% if page.slideSource %}
-<h4>Slides</h4>
+{% if page.slides %}
+<h4>Слайды</h4>
 <div>
-    {% if page.slideSource == 'speakerdeck' %}
-        <script async class="speakerdeck-embed" data-id="{{ page.speakerdeckId }}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+    {% if page.slides.speakerdeck %}
+        <script async class="speakerdeck-embed" data-id="{{ page.slides.speakerdeck }}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
     {% endif %}
-    {% if page.slideSource == 'slideshare' %}
+    {% if page.slides.slideshare %}
         <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{ page.slideshareId }}" width="{{ site.widthPx }}" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
         </iframe>
         <div style="margin-bottom:5px">
             <strong>
-                <a href="//www.slideshare.net/{{ site.speakerdeck }}/{{ page.slideshareName }}"
+                <a href="//www.slideshare.net/{{ page.slides.slideshare }}"
                    title="{{ page.title }}" target="_blank">{{ page.title }}</a>
-            </strong> from <strong><a href="https://www.slideshare.net/{{ site.slideshare }}" target="_blank"> {{ site.name }} </a></strong> </div>
     {% endif %}
-    {% if page.slideSource == 'external' %}
-        <a class="item" href="{{ page.slidesUrl }}">External source</a>
+    {% if page.slides.externalLink %}
+        <a class="item" href="{{ page.slides.externalLink }}">External source</a>
     {% endif %}
 </div>
 {% endif %}
 
 {% if page.video %}
-<h4>Video</h4>
-    {% if page.video.source == 'youtube' %}
-        <iframe width="{{ site.widthPx }}" height="580" src="https://www.youtube.com/embed/{{ page.video.youtubeId }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<h4>Видео</h4>
+    {% if page.video.youtube %}
+        <iframe width="{{ site.widthPx }}" height="580" src="https://www.youtube.com/embed/{{ page.video.youtube }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     {% endif %}
 {% endif %}
 
