@@ -16,7 +16,7 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://jenkinsci-ru.github.io
+url: https://jenkins-ru.github.io
 
 permalink: /:title/
 
@@ -38,7 +38,7 @@ twitter: jenkins_ru
 # google: mygoogle
 youtube: jenkinsru
 # spotify: myspotify
-github: jenkinsci-ru
+github: jenkins-ru
 email: jenkins-ru-orgs@gmail.com
 gitter: jenkinsci-ru/public
 
