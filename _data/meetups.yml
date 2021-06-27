@@ -7,13 +7,19 @@
   telegram: HbH7fhI8FI4zCSDpxD09VA
 - id: jenkins_msk
   city: "Москва"
-  externalLink: "https://www.meetup.com/Moscow-Jenkins-Meetup"
-  meetup: Moscow-Jenkins-Meetup
+  externalLink: "https://www.meetup.com/Moscow-CI-CD-Meetup/"
+  meetup: Moscow-CI-CD-Meetup
+  telegram: moscow_cicd
 - id: jenkins_yaroslavl
   city: "Ярославль"
-  externalLink: "https://www.meetup.com/Yaroslavl-Jenkins-Meetup/"
+  # Depublished: externalLink: "https://www.meetup.com/Yaroslavl-Jenkins-Meetup/"
   logo: /assets/images/meetups/jenkins_yaroslavl/logo.png
   meetup: Yaroslavl-Jenkins-Meetup
+- id: jenkins_nn
+  city: "Нижний Новгород"
+  externalLink: "https://www.meetup.com/Nizhny-Novgorod-Jenkins-Meetup/"
+  meetup: Nizhny-Novgorod-Jenkins-Meetup
+  telegram: jenkins_nn
 - id: jenkins_by
   city: "Беларусь"
   externalLink: "https://www.meetup.com/Belarus-Jenkins-Meetup"
