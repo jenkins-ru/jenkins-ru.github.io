@@ -9,7 +9,7 @@
   city: "Москва"
   externalLink: "https://www.meetup.com/Moscow-CI-CD-Meetup/"
   meetup: Moscow-CI-CD-Meetup
-  telegram: moscow_cicd
+  telegram: RlHqAZsUwJM2OTg6
 - id: jenkins_yaroslavl
   city: "Ярославль"
   # Depublished: externalLink: "https://www.meetup.com/Yaroslavl-Jenkins-Meetup/"
@@ -19,7 +19,7 @@
   city: "Нижний Новгород"
   externalLink: "https://www.meetup.com/Nizhny-Novgorod-Jenkins-Meetup/"
   meetup: Nizhny-Novgorod-Jenkins-Meetup
-  telegram: jenkins_nn
+  telegram: W3Ely4O9m8M4NThi
 - id: jenkins_by
   city: "Беларусь"
   externalLink: "https://www.meetup.com/Belarus-Jenkins-Meetup"
