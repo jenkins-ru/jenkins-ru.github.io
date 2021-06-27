@@ -40,7 +40,7 @@ youtube: jenkinsru
 # spotify: myspotify
 github: jenkins-ru
 email: jenkins-ru-orgs@gmail.com
-gitter: jenkinsci-ru/public
+#gitter: jenkinsci-ru/public
 
 authors:
   oleg_nenashev:
