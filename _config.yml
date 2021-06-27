@@ -42,18 +42,6 @@ github: jenkins-ru
 email: jenkins-ru-orgs@gmail.com
 #gitter: jenkinsci-ru/public
 
-authors:
-  oleg_nenashev:
-    name: Олег Ненашев
-    bio: Организатор Jenkins RU, мейнтейнер ядра Jenkins
-    external-image: false
-    picture: assets/images/authors/oleg-nenashev/profile.jpg
-    twitter: oleg_nenashev
-  arseniy_tashoyan:
-    name: Арсений Ташоян
-    bio: Hewlett Packard Enterprise
-    external-image: false
-
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
@@ -68,9 +56,9 @@ widthPx: 810px
 # if you don't need projects, comment the *projects* configs below
 projects: true
 # TODO: Not ready
-talks: true
+talks: false
 about: true
-blog: true
+blog: false
 
 # do you want to show the "read time" of the posts?
 read-time: true
@@ -99,3 +87,16 @@ plugins:
 
 jekyll-mentions:
     base_url: https://github.com
+    
+authors:
+  oleg_nenashev:
+    name: Олег Ненашев
+    bio: Организатор Jenkins RU, мейнтейнер ядра Jenkins
+    external-image: false
+    picture: assets/images/authors/oleg-nenashev/profile.jpg
+    twitter: oleg_nenashev
+  arseniy_tashoyan:
+    name: Арсений Ташоян
+    bio: Hewlett Packard Enterprise
+    external-image: false   
+ 
